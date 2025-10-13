@@ -1,21 +1,20 @@
-#include "fixed.hpp"
+#include "Fixed.hpp"
 
 
 Fixed::Fixed() {
-    this->_value = 0;
     std::cout << "Default constructor called" << std::endl;
+    this->_value = 0;
 }
 
 Fixed::Fixed(const Fixed& other) {
-    this->_value = other._value;
     std::cout << "Copy constructor called" << std::endl;
+    this->_value = other._value;
 }
 
 Fixed& Fixed::operator=(const Fixed& other) {
     std::cout << "Copy assignment operator called" << std::endl;
-    if (this != &other) {
-        this->_value = other._value;
-    }
+    if (this != &other)
+        this->_value = other.getRawBits();
     return *this;
 }
 

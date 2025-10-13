@@ -1,4 +1,4 @@
-NAME = ex00
+NAME = ex01
 
 SRC_DIR = ./srcs
 OBJ_DIR = obj
