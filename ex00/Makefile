@@ -2,7 +2,7 @@ NAME = ex00
 
 SRC_DIR = ./srcs
 OBJ_DIR = obj
-SRCS = $(SRC_DIR)/main.cpp $(SRC_DIR)/Fixed.cpp
+SRCS = $(SRC_DIR)/main.cpp $(SRC_DIR)/fixed.cpp
 OBJS = $(patsubst $(SRC_DIR)/%.cpp, $(OBJ_DIR)/%.o, $(SRCS))
 
 CXX = c++
