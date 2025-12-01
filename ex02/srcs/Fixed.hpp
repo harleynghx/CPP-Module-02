@@ -5,8 +5,7 @@
 #include <iostream>
 #include <cmath>
 
-class Fixed
-{
+class Fixed {
 private:
     int              _value;
     static const int _fractionalBits = 8;
@@ -53,6 +52,5 @@ public:
     static const Fixed& max(const Fixed& a, const Fixed& b);
 };
 std::ostream& operator<<(std::ostream& os, const Fixed& fixed);
-
 
 #endif
