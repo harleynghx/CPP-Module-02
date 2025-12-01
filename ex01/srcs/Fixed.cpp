@@ -20,6 +20,9 @@ Fixed::~Fixed() {
     std::cout << "Destructor called" << std::endl;
 }
 
+
+
+
 Fixed::Fixed(const int cint) : _value(cint << _fractionalBits) {
     std::cout << "Int constructor called" << std::endl;
 }
